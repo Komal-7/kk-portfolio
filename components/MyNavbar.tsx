@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function MyNavbar() {
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid rounded className="bg-[#EAEDE8]">
       <NavbarBrand className="gap-4">
         <div className="flex flex-wrap mt-1">
           <Avatar img="/avatar.png" alt="avatar of KK" rounded />
@@ -14,10 +14,10 @@ export function MyNavbar() {
       <NavbarToggle />
       <NavbarCollapse>
         <NavbarLink href="#about" active>
-          Home
-        </NavbarLink>
-        <NavbarLink as={Link} href="#">
           About
+        </NavbarLink>
+        <NavbarLink href="#journey">
+          Journey
         </NavbarLink>
         <NavbarLink href="#">Services</NavbarLink>
         <NavbarLink href="#">Pricing</NavbarLink>
