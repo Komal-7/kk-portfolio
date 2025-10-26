@@ -9,11 +9,11 @@ export function MyNavbar() {
         <div className="flex flex-wrap mt-1">
           <Avatar img="/avatar.png" alt="avatar of KK" rounded />
         </div>
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Komal Kiri</span>
+        <span className="self-center whitespace-nowrap text-xl font-semibold text-[#485641] dark:text-white">Komal Kiri</span>
       </NavbarBrand>
       <NavbarToggle />
       <NavbarCollapse>
-        <NavbarLink href="#about" active>
+        <NavbarLink href="#about" active className="!pb-0.5 !text-[#485641] dark:!text-white shadow-lg shadow-[#283648]/20 dark:shadow-[#06AE92]/20">
           About
         </NavbarLink>
         <NavbarLink href="#journey">

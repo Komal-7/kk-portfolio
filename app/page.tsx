@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import { Journey } from "@/components/Journey";
 import { MyNavbar } from "@/components/MyNavbar";
 import { DarkThemeToggle } from "flowbite-react";
 import Image from "next/image";
@@ -29,7 +30,7 @@ export default function Home() {
       </div>
       <MyNavbar />
       <About />
-      
+      <Journey />
     </main>
   );
 }

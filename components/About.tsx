@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col md:flex-row items-center  min-h-[80vh] px-8 md:px-40 text-white scroll-mt-20"
+      className="flex flex-col md:flex-row items-center py-24 px-8 md:px-40 text-white scroll-mt-20"
     >
     
       <div className="md:w-1/2 space-y-6 text-center md:text-left z-100">
