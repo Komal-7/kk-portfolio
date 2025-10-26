@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import { Journey } from "@/components/Journey";
 import { MyNavbar } from "@/components/MyNavbar";
+import { ProfileBadge } from "@/components/ProfileBadge";
 import { DarkThemeToggle } from "flowbite-react";
 import Image from "next/image";
 
@@ -25,21 +26,12 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="fixed top-4 right-4 z-15">
-      <div className="relative w-24 h-24 md:w-42 md:h-42 rounded-full overflow-hidden border-4 border-[#7F9574] dark:border-[#039275]">
-        <Image
-          src="/avatar-full.png"
-          alt="John Doe's profile picture"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
-      </div>
+      
       <div className="absolute bottom-4 right-4">
         <DarkThemeToggle />
       </div>
       <MyNavbar />
+        <ProfileBadge />
       <About />
       <Journey />
     </main>

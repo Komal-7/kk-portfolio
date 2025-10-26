@@ -7,7 +7,7 @@ import { IoMdDownload } from "react-icons/io";
 
 export default function About() {
   return (
-    <section className="min-h-screen flex items-center justify-center font-[Inter,sans-serif] px-4">
+    <section id="home" className="min-h-screen flex items-center justify-center font-[Inter,sans-serif] px-4">
       <div className="text-center p-4 max-w-4xl mx-auto z-5">
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight px-4 pb-3 pt-6 tracking-tight text-[#485641] dark:text-gray-300">
