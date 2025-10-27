@@ -16,7 +16,12 @@ const geistMono = Geist_Mono({
 
 export const metadata : Metadata = {
   title: "Komal Kiri | Software Developer",
-  description: "Portfolio of Komal Kiri, a software developer specializing in Frontend Technologies.",
+  description: "A software developer specializing full stack development.",
+  openGraph: {
+    title: 'Komal Kiri | Software Developer',
+    description: 'A software developer specializing full stack development.',
+    images: ['/landing-image.png'],
+  },
 };
 export default function RootLayout({
   children,

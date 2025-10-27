@@ -72,7 +72,7 @@ export default function About() {
         </h1>
 
         <p className="mt-8 text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          I’m a software developer specializing in frontend experiences and fluent across the full stack.
+          I’m a software developer specializing in full-stack development.
         </p>
 
         <div className="mt-8 flex justify-center gap-8">
