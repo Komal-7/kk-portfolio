@@ -14,7 +14,7 @@ const navTheme = createTheme({
 export function MyNavbar() {
   return (
     <ThemeProvider theme={navTheme}>
-    <Navbar fluid rounded className="bg-[#EAEDE8] sticky top-0 z-10">
+    <Navbar fluid rounded className="bg-[#EAEDE8] sticky top-0 z-30">
       <NavbarBrand className="gap-4 h-8">
         <span className="self-center whitespace-nowrap text-xl font-semibold text-[#485641] dark:text-white">Komal Kiri</span>
         <span className="self-center hidden md:inline whitespace-nowrap text-xl font-semibold text-[#485641] dark:text-white">| &nbsp; Software Developer</span>
@@ -28,7 +28,7 @@ export function MyNavbar() {
           Journey
         </NavbarLink>
         <NavbarLink as={Link} href="#projects">Projects</NavbarLink>
-        <NavbarLink href="#">Contact</NavbarLink>
+        <NavbarLink as={Link} href="#contact">Contact</NavbarLink>
       </NavbarCollapse>
     </Navbar>
     </ThemeProvider>

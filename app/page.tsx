@@ -1,8 +1,10 @@
 import About from "@/components/About";
+import { Contact } from "@/components/Contact";
 import { Journey } from "@/components/Journey";
 import { MyNavbar } from "@/components/MyNavbar";
 import { ProfileBadge } from "@/components/ProfileBadge";
 import { Projects } from "@/components/Projects";
+import { SiteFooter } from "@/components/SiteFooter";
 import { DarkThemeToggle } from "flowbite-react";
 import Image from "next/image";
 
@@ -28,14 +30,17 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="absolute bottom-4 right-4">
+      <div className="fixed bottom-4 right-4">
         <DarkThemeToggle />
       </div>
+      
       <MyNavbar />
         <ProfileBadge />
       <About />
       <Journey />
       <Projects />
+      <Contact />
+      <SiteFooter />
     </main>
   );
 }
