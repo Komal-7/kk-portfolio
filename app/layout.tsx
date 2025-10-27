@@ -20,7 +20,7 @@ export const metadata : Metadata = {
   openGraph: {
     title: 'Komal Kiri | Software Developer',
     description: 'A software developer specializing full stack development.',
-    images: ['/landing-image.png'],
+    images: ['https://www.kirikomal.com/landing-image.png'],
   },
 };
 export default function RootLayout({
