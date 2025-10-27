@@ -2,6 +2,7 @@ import About from "@/components/About";
 import { Journey } from "@/components/Journey";
 import { MyNavbar } from "@/components/MyNavbar";
 import { ProfileBadge } from "@/components/ProfileBadge";
+import { Projects } from "@/components/Projects";
 import { DarkThemeToggle } from "flowbite-react";
 import Image from "next/image";
 
@@ -34,6 +35,7 @@ export default function Home() {
         <ProfileBadge />
       <About />
       <Journey />
+      <Projects />
     </main>
   );
 }
