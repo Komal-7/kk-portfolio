@@ -27,7 +27,7 @@ export function MyNavbar() {
         <NavbarLink as={Link} href="#journey">
           Journey
         </NavbarLink>
-        <NavbarLink href="#">Projects</NavbarLink>
+        <NavbarLink as={Link} href="#projects">Projects</NavbarLink>
         <NavbarLink href="#">Contact</NavbarLink>
       </NavbarCollapse>
     </Navbar>

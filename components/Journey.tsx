@@ -225,7 +225,7 @@ export function Journey() {
             <TimelineItem>
                 <TimelinePoint icon={PiStudent} />
                 <TimelineContent>
-                    <TimelineTitle>Bachelor of Technology in Computer Engineering, GPA: 3.0/4.0 </TimelineTitle>
+                    <TimelineTitle>Bachelor of Technology in Computer Engineering, GPA: 7.51/10 </TimelineTitle>
                     <TimelineTime>Dharmsinh Desai University, Nadiad, India  |  May 2015 - May 2019</TimelineTime>
                 </TimelineContent>
             </TimelineItem>

@@ -3,9 +3,10 @@
 import { Button } from "flowbite-react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { IoMdDownload } from "react-icons/io";
+import { IoDocumentText } from "react-icons/io5";
 
 export default function About() {
+    const openInNewTab = (url: string) => window.open(url, "_blank", "noopener,noreferrer");
   return (
     <section id="home" className="min-h-screen flex items-center justify-center font-[Inter,sans-serif] px-4">
       <div className="text-center p-4 max-w-4xl mx-auto z-5">
@@ -76,22 +77,35 @@ export default function About() {
         </p>
 
         <div className="mt-8 flex justify-center gap-8">
-            <Button className="bg-[#EAEDE8] text-[#7F9574] hover:bg-[#D0D7CB] dark:bg-[#1F2937] dark:text-[#039275] dark:hover:bg-[#41536d]">
+            <Button className="cursor-pointer bg-[#EAEDE8] text-[#7F9574] hover:bg-[#D0D7CB] dark:bg-[#1F2937] dark:text-[#039275] dark:hover:bg-[#41536d]"
+                    onClick={() => openInNewTab("https://www.linkedin.com/in/komal-kiri/")}
+            >
                 <FaLinkedin className="h-6 w-6" />
             </Button>
-            <Button className="bg-[#EAEDE8] text-[#7F9574] hover:bg-[#D0D7CB] dark:bg-[#1F2937] dark:text-[#039275] dark:hover:bg-[#41536d]">
+            <Button className="cursor-pointer bg-[#EAEDE8] text-[#7F9574] hover:bg-[#D0D7CB] dark:bg-[#1F2937] dark:text-[#039275] dark:hover:bg-[#41536d]"
+                    onClick={() => openInNewTab("https://github.com/Komal-7")}
+            >
                 <FaGithub className="h-6 w-6" />
             </Button>
-            <Button className="bg-[#EAEDE8] text-[#7F9574] hover:bg-[#D0D7CB] dark:bg-[#1F2937] dark:text-[#039275] dark:hover:bg-[#41536d]">
-                <FaEnvelope className="h-6 w-6" />
-            </Button>
+            
+            <a href="mailto:kkiri@csu.fullerton.edu" >
+                <Button className="cursor-pointer bg-[#EAEDE8] text-[#7F9574] hover:bg-[#D0D7CB] dark:bg-[#1F2937] dark:text-[#039275] dark:hover:bg-[#41536d]">
+                    <FaEnvelope className="h-6 w-6" />
+                </Button>
+            </a>
         </div>
 
         <div className="mt-8 mb-8 flex justify-center">
-            <Button className="bg-[#EAEDE8] text-[#7F9574] hover:bg-[#D0D7CB] dark:bg-[#1F2937] dark:text-[#039275] dark:hover:bg-[#41536d]">
-                <IoMdDownload className="h-6 w-6" />
-                Download CV
-            </Button>
+            <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <Button className="cursor-pointer flex justify-center gap-2 font-semibold bg-[#EAEDE8] text-[#7F9574] hover:bg-[#D0D7CB] dark:bg-[#1F2937] dark:text-[#039275] dark:hover:bg-[#41536d]">
+                    <IoDocumentText className="h-6 w-6" />
+                    View Resume
+                </Button>
+            </a>
         </div>
       </div>
     </section>

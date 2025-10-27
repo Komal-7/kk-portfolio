@@ -7,12 +7,13 @@ export function Projects() {
     return (
        <section
             id="projects"
-            className="flex flex-col md:flex-row items-center justify-center min-h-[80vh] px-8 md:px-40 text-white scroll-mt-20"
+            className="flex flex-col md:flex-row items-center justify-center min-h-[80vh] mt-28 px-8 md:px-40 text-white scroll-mt-20"
         >
             <div className="space-y-6">
-                <p className="text-4xl font-bold tracking-tight text-[#7F9574] dark:text-[#039275] sm:text-5xl">Projects</p>
+                <p className="text-4xl font-bold tracking-tight text-[#7F9574] dark:text-[#039275] sm:text-5xl">My Projects</p>
+                <p className="mt-4 text-lg text-[#283648] dark:text-gray-300">A curated overview of the projects I’ve built</p>
 
-                <div className="relative flex flex-col md:flex-row items-center justify-center pb-5">
+                <div className="relative flex flex-col md:flex-row items-center justify-center pb-15">
                     <div className="z-10 md:-mr-16 w-full md:w-2/3">
                         <h3 className="text-xl font-semibold text-[#485641] dark:text-white pb-5">
                             Smart Cooking Assistant
@@ -39,7 +40,7 @@ export function Projects() {
                     <ProjectCard image="smart-cook" />
                 </div>
 
-                <div className="relative flex flex-col md:flex-row-reverse items-center justify-center pb-5">
+                <div className="relative flex flex-col md:flex-row-reverse items-center justify-center pb-15">
                     <div className="z-10 md:-ml-16 w-full md:w-2/3 text-right">
                         <h3 className="text-xl font-semibold text-[#485641] dark:text-white pb-5">
                             Smart Pillbox Dispenser
@@ -71,7 +72,7 @@ export function Projects() {
                     <ProjectCard image="smart-cook" />
                 </div>
 
-                <div className="relative flex flex-col md:flex-row items-center justify-center pb-5">
+                <div className="relative flex flex-col md:flex-row items-center justify-center pb-15">
                     <div className="z-10 md:-mr-16 w-full md:w-2/3">
                         <h3 className="text-xl font-semibold text-[#485641] dark:text-white pb-5">
                             Music Recommendation System
@@ -89,6 +90,71 @@ export function Projects() {
                             rdflib
                             <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
                             Spotipy
+                            <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
+                            React
+                        </p>
+                        <Button className="bg-[#EAEDE8] text-[#7F9574] hover:bg-[#D0D7CB] dark:bg-[#1F2937] dark:text-[#039275] dark:hover:bg-[#41536d] gap-2">
+                            <FaCode className="w-4 h-4"/>
+                            <span>Code</span>
+                        </Button>
+                    </div>
+                    <ProjectCard image="smart-cook" />
+                </div>
+
+                <div className="relative flex flex-col md:flex-row-reverse items-center justify-center pb-15">
+                    <div className="z-10 md:-ml-16 w-full md:w-2/3 text-right">
+                        <h3 className="text-xl font-semibold text-[#485641] dark:text-white pb-5">
+                            Portfolio Management Platform
+                        </h3>
+                        <Card className="rounded-sm shadow-lg [box-shadow:8px_8px_12px_-6px_rgba(40,54,72,0.3)] dark:[box-shadow:8px_8px_12px_-6px_rgba(6,174,146,0.3)]">
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">
+                            A cloud-based platform that empowers users to build and deploy professional portfolios effortlessly. It combines a drag-and-drop editor with automated deployment, allowing users to design, customize, and publish their portfolios in minutes — helping them stand out in the job market.
+                        </p>
+                        </Card>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 py-4">
+                            React
+                            <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
+                            Node.js Express
+                            <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
+                            DynamoDB
+                            <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
+                            GrapesJS
+                            <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
+                            Netlify
+                        </p>
+
+                        <div className="flex justify-end">
+                        <Button className="bg-[#EAEDE8] text-[#7F9574] hover:bg-[#D0D7CB] dark:bg-[#1F2937] dark:text-[#039275] dark:hover:bg-[#41536d] gap-2">
+                            <FaCode className="w-4 h-4" />
+                            <span>Code</span>
+                        </Button>
+                        </div>
+                    </div>
+                    <ProjectCard image="smart-cook" />
+                </div>
+
+                <div className="relative flex flex-col md:flex-row items-center justify-center">
+                    <div className="z-10 md:-mr-16 w-full md:w-2/3">
+                        <h3 className="text-xl font-semibold text-[#485641] dark:text-white pb-5">
+                            AWS Cloud-Based Discussion Forum
+                        </h3>
+                        <Card className="rounded-sm shadow-lg [box-shadow:-8px_8px_12px_-6px_rgba(40,54,72,0.3)] dark:[box-shadow:-8px_8px_12px_-6px_rgba(6,174,146,0.3)]">
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">
+                            A fully serverless discussion forum designed to explore and master AWS cloud services. It leverages API Gateway, Lambda, and DynamoDB for scalable backend processing, Cognito for user authentication, and Amazon SQS & SES for real-time notifications and user engagement.
+                        </p>
+                        </Card>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 py-4">
+                            Lambda
+                            <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
+                            API Gateway
+                            <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
+                            DynamoDB
+                            <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
+                            Cognito
+                            <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
+                            SQS
+                            <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
+                            SES
                             <span className="text-[#7F9574] dark:text-[#039275] mx-2">|</span>
                             React
                         </p>
