@@ -10,10 +10,11 @@ export default function ProjectCard({image}:{image:string}){
                     className="absolute inset-0 w-full h-full object-cover grayscale brightness-70 dark:brightness-40 contrast-125 transition-all duration-500 group-hover:brightness-100 group-hover:grayscale-0"
                 />
                 <video
-                    src={"/"+image+".mov"}
+                    src={"/"+image+".mp4"}
                     muted
                     loop
                     playsInline
+                    preload="metadata"
                     className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                     onMouseEnter={(e) => e.currentTarget.play()}
                     onMouseLeave={(e) => {

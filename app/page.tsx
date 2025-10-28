@@ -31,7 +31,7 @@ export default function Home() {
       </div>
       
       <div className="fixed bottom-4 right-4">
-        <DarkThemeToggle />
+        <DarkThemeToggle className="ring-4 ring-gray-200 dark:ring-gray-700"/>
       </div>
       
       <MyNavbar />
