@@ -187,7 +187,7 @@ export function Journey() {
                 <TimelinePoint icon={FaLaptopCode} />
                 <TimelineContent>
                     <TimelineTitle>Teaching Associate</TimelineTitle>
-                    <TimelineTime>Jeavio  |  August 2025 - Present</TimelineTime>
+                    <TimelineTime>CSUF  |  August 2025 - Present</TimelineTime>
                     <TimelineBody>
                         <div className="text-left pt-5 pb-4 [box-shadow:8px_8px_12px_-6px_rgba(40,54,72,0.3)] dark:[box-shadow:8px_8px_12px_-6px_rgba(6,174,146,0.3)]">
                             <ul className="list-disc pl-5 space-y-1">
